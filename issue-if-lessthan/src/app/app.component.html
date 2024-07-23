@@ -1,0 +1,17 @@
+<!-- Other oeprators, like > works ok -->
+@if(viewModel.total_count > 2) {
+<div>Greater than 2</div>
+}
+
+<!-- 
+Issue with < or <=
+This is manully coded before formatting.
+It will be formatted same as the next code block.
+-->
+@if(viewModel.total_count < 2) {
+<div>Greater than 2</div>
+}
+
+<!-- After format -->
+@if(viewModel.total_count < 2) { <div>Less than 2</div>
+  }
